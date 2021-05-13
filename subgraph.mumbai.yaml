@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Balancer is a non-custodial portfolio manager, liquidity provider, and price sensor.
-repository: https://github.com/vinhbhn/balancer-subgraph
+repository: https://github.com/balancer-labs/balancer-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,9 +8,9 @@ dataSources:
     name: Factory
     network: mumbai
     source:
-      address: "0x07209Ea76Df0EE31F825cbEE11348Cc6A99B12f1"
+      address: "0x43F1400cbb9391665eA91CdD657CC54BED31CE49"
       abi: Factory
-      startBlock: 13668960
+      startBlock: 13784107
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4

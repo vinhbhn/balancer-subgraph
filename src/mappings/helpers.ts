@@ -44,6 +44,13 @@ if (network == 'rinkeby') {
   CRP_FACTORY = '0xA3F9145CB0B50D907930840BB2dcfF4146df8Ab4'
 }
 
+if (network == 'mumbai') {
+  WETH = '0xd84b3E88ca7c7c14E925539EBd4ce9c27b6916De'
+  USD = '0x6D4dd09982853F08d9966aC3cA4Eb5885F16f2b2'
+  DAI = '0x8Cab8846eE3eF1Cb5b71e87b8997DA8B24640981'
+  CRP_FACTORY = '0x501c33C99c6149363c5606ed8C6E07641E1F4a22'
+}
+
 export function hexToDecimal(hexString: string, decimals: i32): BigDecimal {
   let bytes = Bytes.fromHexString(hexString).reverse() as Bytes
   let bi = BigInt.fromUnsignedBytes(bytes)
