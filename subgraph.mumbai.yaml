@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 description: Balancer is a non-custodial portfolio manager, liquidity provider, and price sensor.
-repository: https://github.com/balancer-labs/balancer-subgraph
+repository: https://github.com/vinhbhn/balancer-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
@@ -80,9 +80,6 @@ templates:
           handler: handleSwap
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      callHandlers:
-        - function: gulp(address)
-          handler: handleGulp
   - kind: ethereum/contract
     name: CrpController
     network: mumbai
